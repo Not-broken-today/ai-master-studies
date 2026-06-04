@@ -1,6 +1,6 @@
 # DarkIR Evaluation Pipeline — Описание проекта
 
-> **04-deep-learning-systems** — учебный проект по курсу «Разработка систем глубокого обучения»
+> **Dev_of_DL_system** — учебный проект по курсу «Разработка систем глубокого обучения»
 
 ---
 
@@ -20,7 +20,7 @@
 ## Структура проекта
 
 ```
-04-deep-learning-systems/
+Dev_of_DL_system/
 ├── assets/
 │   ├── inputs/          # Входные тёмные изображения для тестирования
 │   ├── results/         # Эталонные результаты для сравнения
@@ -38,10 +38,16 @@
 ## Как запустить проект
 
 ```bash
-# 1. Соберите образ
+# 1. Скопируете репозиторий 
+git clone https://github.com/Not-broken-today/Dev_of_DL_system.git
+
+# 2 Перейдите в папку
+cd Dev_of_DL_system
+
+# 3. Соберите образ
 docker build -t darkir-eval .
 
-# 2. Запустите контейнер
+# 4. Запустите контейнер
 docker run --rm  darkir-eval
 ```
 
